@@ -1,0 +1,12 @@
+:root{
+   --green: #ff0000 
+}
+p{
+    font-size: 13px !important;
+}
+h5{
+ font-size: 16px !important;
+}
+a{
+    text-decoration: none !important;
+}

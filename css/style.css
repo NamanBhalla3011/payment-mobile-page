@@ -1,0 +1,106 @@
+@import url(root.css);
+
+/* index.html */
+.scroll-wrapper {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.nav-scroll {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  scroll-behavior: smooth !important;
+  white-space: nowrap !important;
+  padding: 0 40px !important; /* Space for arrows */
+}
+
+.nav-scroll .nav-link {
+  flex: 0 0 auto !important;
+  padding: 0.75rem 1rem !important;
+  color: black !important;
+  font-weight: 500 !important;
+  border: none !important;
+}
+
+.nav-scroll .nav-link.active {
+  color: green !important;
+  border-bottom: 3px solid black !important;
+}
+
+.scroll-btn {
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 40px !important;
+  background-color: black !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  z-index: 2 !important;
+}
+
+.scroll-left {
+  left: 0 !important;
+}
+
+.scroll-right {
+  right: 0 !important;
+}
+
+/* instant.html */
+
+.white-box {
+  background: white !important;
+  border-radius: 0.5rem !important;
+  padding: 1rem 1.25rem !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05) !important;
+}
+.custom-label {
+    background-color: white;
+  position: absolute !important;
+  top: -0.7rem !important;
+  left: 0.65rem !important;
+  padding: 0 !important;
+  font-size: 0.9rem !important;
+  color: black !important;
+  z-index: 1 !important;
+}
+
+.custom-input {
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  padding: 0.75rem !important;
+}
+
+.custom-input:focus {
+  border-color: #28a745 !important; /* Bootstrap green */
+  box-shadow: none !important; /* Optional: remove default Bootstrap glow */
+}
+
+.custom-input-wrapper:focus-within .custom-label {
+  color: #28a745 !important;
+}
+.amount-btns .btn {
+  min-width: 90px !important;
+}
+
+.btn-proceed {
+  background-color: green !important;
+  color: white !important;
+}
+
+.btn-proceed:hover {
+  background-color: darkgreen !important;
+}
+
+.btn-back {
+  background-color: black !important;
+  color: white !important;
+}
+
+.btn-back:hover {
+  background-color: darkgray !important;
+}
