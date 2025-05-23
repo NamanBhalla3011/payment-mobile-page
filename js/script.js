@@ -22,7 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const filter = this.getAttribute("data-filter");
 
       items.forEach((item) => {
-        if (filter === "all" || item.dataset.category === filter) {
+        if (filter === "all") {
+          item.style.display = "block";
+          if (item.id === "history-content") {
+            item.style.display = "none";
+          }
+        } else if (item.dataset.category === filter) {
           item.style.display = "block";
         } else {
           item.style.display = "none";

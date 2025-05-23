@@ -1,6 +1,6 @@
 @import url(root.css);
 
-div.row.text-bg-secondary.p-3{
+div.row.text-bg-secondary.p-3 {
   background-color: var(--color3) !important;
 }
 
@@ -58,7 +58,38 @@ div.row.text-bg-secondary.p-3{
   right: 0 !important;
 }
 
+/* History */
+.status-successful {
+  color: green !important;
+}
+
+.status-unsuccessful {
+  color: red !important;
+}
+
+.table-container {
+  border-radius: 0.5rem !important;
+}
+
+div.mb-3.m-0.summary-content.col-12.col-md-4 {
+  border: 1px solid var(--color5) !important;
+  background-color: var(--color6) !important;
+  border-radius: 5px !important;
+}
+
+.table thead tr th {
+  background-color: var(--color5) !important;
+  color: white !important;
+}
+
+table tbody tr:nth-child(odd) td {
+  background-color: var(--color6) !important;
+}
+
 /* instant.html */
+div.row.py-4.m-0.mx-auto.w-100 {
+  max-width: 600px !important;
+}
 
 .white-box {
   background: var(--color2) !important;
